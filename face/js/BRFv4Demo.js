@@ -79,7 +79,7 @@ brfv4Example.start = function() {
 		"js/libs/threejs/three.min.js",							// ThreeJS: a 3D engine
 
 		"js/utils/BRFv4DOMUtils.js",							// DOM handling
-		"js/utils/BRFv4Stats.js",								// FPS meter
+	//	"js/utils/BRFv4Stats.js",								// FPS meter
 
 		"js/utils/BRFv4DrawingUtils_CreateJS.js",				// BRF result drawing
 		"js/utils/BRFv4Drawing3DUtils_ThreeJS.js",				// ThreeJS 3d object placement.
@@ -96,7 +96,7 @@ brfv4Example.start = function() {
 
 		// example to load on startup, others can be chosen via the example chooser GUI.
 
-		"js/examples/face_tracking/track_single_face.js"		// start with this example
+		"js/examples/face_tracking/ThreeJS_example.js"		// start with this example
 
 	], function() {
 
