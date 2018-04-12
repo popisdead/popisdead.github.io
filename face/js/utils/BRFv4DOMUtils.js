@@ -34,7 +34,7 @@
 		updateElementSize(getElement("_content"), 		"100%", "auto", 0);
 		updateElementSize(getElement("_drawing"), 		width, height, 1);
 		updateElementSize(getElement("_faceSub"), 		width, height, 1);
-		updateElementSize(getElement("_t3d"), 			"100%", "auto", 1);
+//		updateElementSize(getElement("_t3d"), 			"100%", "auto", 1);
 		updateElementSize(getElement("_f3d"), 			width, height, 1);
 		updateElementSize(getElement("_webcam"),		width, height, 1);
 		updateElementSize(getElement("_imageData"),		width, height, 1);
