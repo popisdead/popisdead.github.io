@@ -58,7 +58,7 @@
 
 				// Set the 3D model according to the tracked results.
 
-				if(t3d) t3d.update(i, face, true);
+				if(t3d) t3d.update(i, face, true); 
 				document.getElementById("_t3d").style.width="100% !important";
 				document.getElementById("_t3d").style.height="auto !important";
 			}
