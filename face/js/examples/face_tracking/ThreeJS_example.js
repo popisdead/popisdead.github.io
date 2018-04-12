@@ -60,8 +60,8 @@
 
 				if(t3d) { t3d.update(i, face, true);
 					alert("ma porca");
-				document.getElementById("_t3d").style.width="100% !important";
-				document.getElementById("_t3d").style.height="auto !important";
+				document.getElementById("_t3d").style.width="100%";
+				document.getElementById("_t3d").style.height="auto";
 				}
 			}
 		}
