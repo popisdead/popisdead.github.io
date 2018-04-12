@@ -132,7 +132,7 @@
 				mesh.position.set(model.position.x, model.position.y, model.position.z);
 				mesh.material.colorWrite = false;
 				mesh.renderOrder = 0;
-				
+
 				t3d.occlusionObjects.push(mesh);
 				containers[k].add(mesh);
 			}
@@ -192,7 +192,7 @@
 		t3d.render();
 	};
 
-	if(t3d.setup && !t3d.stage) {
+	if(t3d.setup && !t3d.stage) { 
 		t3d.setup(dom.getElement("_t3d"));
 	}
 })();
