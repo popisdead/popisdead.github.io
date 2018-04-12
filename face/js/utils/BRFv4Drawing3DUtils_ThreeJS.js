@@ -60,7 +60,7 @@
 		t3d.camera.updateProjectionMatrix();
 		document.getElementById("_t3d").style.width="100% !important";
 		document.getElementById("_t3d").style.height="auto !important";
-
+		alert("pippo;");
 	};
 
 	t3d.update = function(index, face, show) {
