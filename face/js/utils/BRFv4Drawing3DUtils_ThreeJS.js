@@ -39,7 +39,7 @@
 		t3d.renderHeight 	= 0;
 		document.getElementById("_t3d").style.width="100% !important";
 		document.getElementById("_t3d").style.height="auto !important";
-
+	alert("pippo;");
 		t3d.updateLayout(dom.stageWidth, dom.stageHeight);
 	};
 
