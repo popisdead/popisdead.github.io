@@ -56,6 +56,9 @@
 		t3d.camera.position.set(0, 0, 0);
 		t3d.camera.lookAt(new THREE.Vector3(0, 0, 1));
 		t3d.camera.updateProjectionMatrix();
+		document.getElementById("_t3d").style.width="100% !important";
+		document.getElementById("_t3d").style.height="auto !important";
+
 	};
 
 	t3d.update = function(index, face, show) {
@@ -192,7 +195,7 @@
 		t3d.render();
 	};
 
-	if(t3d.setup && !t3d.stage) { 
+	if(t3d.setup && !t3d.stage) {
 		t3d.setup(dom.getElement("_t3d"));
 	}
 })();
