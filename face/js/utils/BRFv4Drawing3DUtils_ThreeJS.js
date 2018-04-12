@@ -45,7 +45,7 @@
 
 		t3d.renderWidth 	= width;
 		t3d.renderHeight 	= height;
-	
+
 		t3d.renderer.setSize(width, height, true);
 
 		t3d.camera.left		= width  / -2;
@@ -57,7 +57,7 @@
 		t3d.camera.lookAt(new THREE.Vector3(0, 0, 1));
 		t3d.camera.updateProjectionMatrix();
 	};
-
+ 
 	t3d.update = function(index, face, show) {
 
 		if(index >= t3d.baseNodes.length) {
