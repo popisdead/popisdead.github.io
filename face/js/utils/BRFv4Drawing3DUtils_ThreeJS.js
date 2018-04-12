@@ -37,9 +37,7 @@
 
 		t3d.renderWidth 	= 0;
 		t3d.renderHeight 	= 0;
-		document.getElementById("_t3d").style.width="100% !important";
-		document.getElementById("_t3d").style.height="auto !important";
-	alert("pippo;");
+
 		t3d.updateLayout(dom.stageWidth, dom.stageHeight);
 	};
 
@@ -58,9 +56,6 @@
 		t3d.camera.position.set(0, 0, 0);
 		t3d.camera.lookAt(new THREE.Vector3(0, 0, 1));
 		t3d.camera.updateProjectionMatrix();
-		document.getElementById("_t3d").style.width="100% !important";
-		document.getElementById("_t3d").style.height="auto !important";
-		alert("pippo;");
 	};
 
 	t3d.update = function(index, face, show) {
