@@ -69,7 +69,7 @@
 	if(!brfv4Example.gui.exampleChooser) {
 
 		QuickSettings.useExtStyleSheet();
-
+/*
 		brfv4Example.gui.exampleChooser = QuickSettings.create(
 			2, 2, "Example Chooser", brfv4Example.dom.createDiv("_settingsRight"))
 			.setWidth(250)
@@ -77,7 +77,7 @@
 			.addDropDown("_example", labels, onExampleChosen)
 			.hideTitle("_example")
 			.setValuesFromJSON({ "_example": 6}); // "basic - face tracking - track single face"
-
+*/
 		_isFirstSelect = false;
 	}
 })();
