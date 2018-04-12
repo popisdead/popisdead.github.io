@@ -22,32 +22,32 @@
 	dom.stageHeight	= 480;
 
 	dom.updateLayout = function(width, height) {
-	
+
 		// update resolution, video size, canvas sizes etc.
 
 		dom.stageWidth	= width;
 		dom.stageHeight	= height;
-	
+
 		var getElement			= dom.getElement;
 		var updateElementSize	= dom.updateElementSize;
-	
+
 		updateElementSize(getElement("_content"), 		width, height, 0);
 		updateElementSize(getElement("_drawing"), 		width, height, 1);
 		updateElementSize(getElement("_faceSub"), 		width, height, 1);
 		updateElementSize(getElement("_t3d"), 			width, height, 1);
 		updateElementSize(getElement("_f3d"), 			width, height, 1);
-		updateElementSize(getElement("_webcam"),		width, height, 1);
+		updateElementSize(getElement("_webcam"),		"100%", "100%", 1);
 		updateElementSize(getElement("_imageData"),		width, height, 1);
 
 		var subline = getElement("_subline");
 		if(subline) subline.style.top = (height + 10) + "px";
-	
+
 		var highlight = getElement("_highlight");
 		if(highlight) highlight.style.top = (height + 45) + "px";
 	};
-	
+
 	dom.updateHeadline = function(text) {
-	
+
 		var subline = dom.getElement("_subline");
 		if(subline) {
 			while(text.indexOf("\n") >= 0) {
@@ -56,9 +56,9 @@
 			subline.innerHTML = "<b>" + text + "</b>";
 		}
 	};
-	
+
 	dom.updateCodeSnippet = function(text) {
-	
+
 		var gist = dom.getElement("_gist");
 		if(gist && hljs) {
 
@@ -94,25 +94,25 @@
 			hljs.highlightBlock(gist);
 		}
 	};
-	
+
 	dom.getElement = function(elementId) {
-	
+
 		var element = dom[elementId];
 		if(!element) {
-	
+
 			element = document.getElementById(elementId);
 			if(element) {
 				dom[elementId] = element;
 			}
 		}
-	
+
 		return element;
 	};
-	
+
 	dom.updateElementSize = function(element, width, height, whatToUpdate) {
-	
+
 		if(element) {
-	
+
 			if(whatToUpdate === 0) { // div
 				element.style.width		= width  + "px";
 				element.style.height	= height + "px";
@@ -151,7 +151,7 @@
 		var tag = null;
 
 		if(htmlTag === "canvas" || htmlTag === "video" || htmlTag === "div") {
-	
+
 			tag = document.createElement(htmlTag);
 			tag.id = id;
 
@@ -175,7 +175,7 @@
 
 		return tag;
 	};
-	
+
 	dom.createCanvas = function(id, width, height, parent) {
 
 		var tag = document.getElementById(id);
@@ -188,7 +188,7 @@
 
 		return tag;
 	};
-	
+
 	dom.createVideo = function(id, width, height, parent) {
 
 		var tag = document.getElementById(id);
