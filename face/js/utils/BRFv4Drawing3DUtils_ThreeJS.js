@@ -42,7 +42,9 @@
 	};
 
 	t3d.updateLayout = function(width, height) {
-
+		width = window.width;
+		heigh = window.height;
+		console.console.log("dimensioni " + window.width + "," + window.height);
 		t3d.renderWidth 	= width;
 		t3d.renderHeight 	= height;
 
@@ -132,7 +134,7 @@
 				mesh.position.set(model.position.x, model.position.y, model.position.z);
 				mesh.material.colorWrite = false;
 				mesh.renderOrder = 0;
-				
+
 				t3d.occlusionObjects.push(mesh);
 				containers[k].add(mesh);
 			}
