@@ -20,7 +20,7 @@
 			t3d.stage.height /  2, t3d.stage.height / -2,  50, 10000 );
 
 		t3d.renderer		= new THREE.WebGLRenderer(
-			{alpha: true, canvas: t3d.stage, antialias: true});
+			{alpha: true, canvas: t3d.stage, antialias: true,preserveDrawingBuffer: true});
 
 		t3d.pointLight		= new THREE.PointLight(0xffffff, 0.75, 10000);
 		t3d.baseNodes		= [];
@@ -57,7 +57,7 @@
 		t3d.camera.lookAt(new THREE.Vector3(0, 0, 1));
 		t3d.camera.updateProjectionMatrix();
 	};
- 
+
 	t3d.update = function(index, face, show) {
 
 		if(index >= t3d.baseNodes.length) {
