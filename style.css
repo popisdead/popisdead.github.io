@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	font-family: 'Playfair Display', serif;
+}
+h1{
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size:40px;
+}
+.blog-post-title{
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+}
+.jumbotron {
+padding: 0 !important;
+		position:relative;
+	 background-color: white !important;
+}
+.jumbotron img {
+bottom: 0;
+    height: 100%;
+    left: 0;
+   
+    right: 0;
+    top: 0;
+    width: 100%;}
+.photo_principal{
+
+}
+.testo_principal{
+
+	background: white;
+}
+.testo_principal h1{
+ color:black;
+margin-top:30px;
+	font-size: 40px;
+}
+.testo_principal p{
+ color:black;
+}
+.bg-dark{
+	background: white;
+}
+.scritrice{
+	font-size: 12px;
+}
+
+.bb-a{color:#c00000;}
+
+footer{
+	background:black;
+	color:white;
+	padding:15px;
+	text-align:right;
+	margin-top:30px;
+	color:black;
+}
+
+.navigazione{
+	    color: black;
+    text-align: center;
+    margin: 0 auto;
+    margin: 15px auto;
+}
+.navigazione a{
+	    color: black;
+    
+}
+.list-unstyled a{
+	color:black;
+}
+
+@media (max-width: 768px){
+  .testo_principal h1{
+ color:black;
+margin-top:20px;
+	  font-size:25px;
+}
+}
+
+
+@media (max-width: 400px){
+  .testo_principal h1{
+ color:black;
+margin-top:20px;
+	  font-size:25px;
+}
+}
