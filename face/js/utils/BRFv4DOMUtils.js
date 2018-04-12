@@ -31,7 +31,7 @@
 		var getElement			= dom.getElement;
 		var updateElementSize	= dom.updateElementSize;
 
-		updateElementSize(getElement("_content"), 		width, height, 0);
+		updateElementSize(getElement("_content"), 		"100%", "auto", 0);
 		updateElementSize(getElement("_drawing"), 		width, height, 1);
 		updateElementSize(getElement("_faceSub"), 		width, height, 1);
 		updateElementSize(getElement("_t3d"), 			width, height, 1);
