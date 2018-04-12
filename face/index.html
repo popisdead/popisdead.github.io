@@ -47,7 +47,9 @@ function myFunction(){
     // in case the document is already rendered
     alert("pippo");
 }
-
+html2canvas(document.querySelector(".pippo")).then(canvas => {
+    document.body.appendChild(canvas)
+});
 </script>
 </body>
 
