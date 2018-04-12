@@ -6,7 +6,7 @@
 	if(!brfv4Example.gui.downloadChooser) {
 
 		QuickSettings.useExtStyleSheet();
-
+/*
 		brfv4Example.gui.downloadChooser = QuickSettings.create(
 			2, 270, "Useful links", brfv4Example.dom.createDiv("_settingsRight"))
 			.setWidth(250)
@@ -19,5 +19,6 @@
 				"<a href='http://www.tastenkunst.com/#/contact' target='_blank'>Email us for commercial license</a><br/>" +
 				"<a href='https://twitter.com/tastenkunst' target='_blank'>Twitter</a><br/><br/>"
 			)
+*/
 		}
 })();
