@@ -36,7 +36,7 @@
 		updateElementSize(getElement("_faceSub"), 		width, height, 1);
 		updateElementSize(getElement("_t3d"), 			width, height, 1);
 		updateElementSize(getElement("_f3d"), 			width, height, 1);
-		updateElementSize(getElement("_webcam"),		"100%", "100%", 1);
+		updateElementSize(getElement("_webcam"),		width, height, 1);
 		updateElementSize(getElement("_imageData"),		width, height, 1);
 
 		var subline = getElement("_subline");
