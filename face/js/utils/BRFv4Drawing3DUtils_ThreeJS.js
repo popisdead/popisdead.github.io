@@ -42,10 +42,11 @@
 	};
 
 	t3d.updateLayout = function(width, height) {
-
+		width = window.innerWidth;
+		height = window.innerHeight;
 		t3d.renderWidth 	= width;
 		t3d.renderHeight 	= height;
-
+		alert("pluto");
 		t3d.renderer.setSize(width, height, true);
 
 		t3d.camera.left		= width  / -2;
