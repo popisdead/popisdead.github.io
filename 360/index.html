@@ -25,7 +25,7 @@ viewer = pannellum.viewer('panorama', {
      "autoLoad": true
 });
 function sceneLoadListener() {
-document.getElementById("panorama").style.height= window.innerHeight;
+ document.getElementsByClassName('pnlm-controls-container').style.display = "none";
 }
 viewer.on('load', sceneLoadListener);
 
