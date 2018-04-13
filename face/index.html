@@ -43,6 +43,7 @@
 </div>
 <div id="_settingsRight" style="display: none;"></div>
 <script type="text/javascript">
+function generate() {
 var canvas1 = document.getElementById("_imageData");
 var ctx1 = canvas1.getContext("2d");
 
@@ -58,6 +59,7 @@ ctx.drawImage(canvas1, 0, 0); //Copying Canvas1
 ctx.drawImage(canvas2, 0, 0); //Copying Canvas2
 
 document.getElementById("image").src = combined.toDataURL()
+}
 </script>
 </body>
 
