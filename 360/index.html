@@ -17,7 +17,7 @@
 
 <div id="panorama" style="width: 100%;"></div>
 <script>
-document.getElementById("panorama").style.height = window.innerHeight;
+document.getElementById("panorama").style.height = document.body.scrollHeight;
 viwer = pannellum.viewer('panorama', {
     "type": "equirectangular",
     "panorama": "https://popisdead.github.io/360/stock-photo-233777319.jpg",
