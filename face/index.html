@@ -33,7 +33,7 @@
 		<canvas id="_drawing"></canvas>
 		<canvas id="combined" width="640px" height="480px"></canvas>
 		<div id="_progressBar"></div>
-		<img src="" id="image" style="z-index: 999999999; width: 600px; height: auto;">
+		<img src="" id="image" style="z-index: 999999999; width: 100%; height: auto;">
 	</div>
 </div>
 <div id="containersnap" style="width: 100%;">
@@ -56,11 +56,9 @@ var combined = document.getElementById("combined");
 var ctx = combined.getContext("2d");
 
 ctx.drawImage(canvas1, 0, 0); //Copying Canvas1
-ctx.drawImage(canvas2, 0, 0); //Copying Canvas2
+ctx.drawImage(canvas2, 0, 0, 640, 480); //Copying Canvas2
 
-document.getElementById("image").src = combined.toDataURL();
-document.getElementById("image").style.width = window.innerWidth;
-document.getElementById("image").style.height = window.innerHeight;
+document.getElementById("image").src = combined.toDataURL()
 }
 </script>
 </body>
