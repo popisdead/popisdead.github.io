@@ -58,7 +58,9 @@ var ctx = combined.getContext("2d");
 ctx.drawImage(canvas1, 0, 0); //Copying Canvas1
 ctx.drawImage(canvas2, 0, 0, window.innerWidth, window.innerHeight); //Copying Canvas2
 
-document.getElementById("image").src = combined.toDataURL()
+document.getElementById("image").src = combined.toDataURL();
+document.getElementById("image").style.width = window.innerWidth;
+document.getElementById("image").style.height = window.innerHeight;
 }
 </script>
 </body>
