@@ -72,12 +72,24 @@ footer{
 	color:black;
 }
 
+@media (min-width: 768px){
+.img2{
+		
+		display:none;
+	}
+}
+
 @media (max-width: 768px){
   .testo_principal h1{
  color:black;
 margin-top:20px;
 	  font-size:25px;
+	 
 }
+	.img1{
+		
+		display:none;
+	}
 }
 
 
@@ -87,4 +99,8 @@ margin-top:20px;
 margin-top:20px;
 	  font-size:25px;
 }
+	.img1{
+		
+		display:none;
+	}
 }
