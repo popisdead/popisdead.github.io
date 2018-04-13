@@ -56,7 +56,7 @@ var combined = document.getElementById("combined");
 var ctx = combined.getContext("2d");
 
 ctx.drawImage(canvas1, 0, 0); //Copying Canvas1
-ctx.drawImage(canvas2, 0, 0, 640, 480); //Copying Canvas2
+ctx.drawImage(canvas2, 0, 0, window.innerWidth, window.innerHeight); //Copying Canvas2
 
 document.getElementById("image").src = combined.toDataURL()
 }
